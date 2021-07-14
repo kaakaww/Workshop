@@ -2,6 +2,10 @@
 
 This README.md is intended to act as a hands-on guide for implementing StackHawk's DAST scanner HawkScan.
 
+**Resources**
+- [StackHawk Documentation](https://docs.stackhawk.com/)
+- [Github Action](https://github.com/marketplace/actions/stackhawk-hawkscan-action)
+
 ## Step One: Fork, Clone, Build
 - [ ] Fork [Vuln_Node_Express](https://github.com/kaakaww/vuln_node_express)
 - [ ] Clone Vuln_Node_Express
