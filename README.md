@@ -68,7 +68,6 @@ jobs:
         uses: stackhawk/hawkscan-action@v1.3.0
         with:
           apiKey: ${{ secrets.HAWK_API_KEY }}
-          dryRun: false
 ```
 
 ## Step Four: Vuln Thresholds & Code Scanning Alerts
@@ -89,5 +88,4 @@ app:
           apiKey: ${{ secrets.HAWK_API_KEY }}
           codeScanningAlerts: true
           githubToken: ${{ github.token }}
-          dryRun: false
 ```
