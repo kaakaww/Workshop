@@ -66,3 +66,25 @@ jobs:
           apiKey: ${{ secrets.HAWK_API_KEY }}
           dryRun: false
 ```
+
+## Step Four: Vuln Thresholds & Code Scanning Alerts
+- [ ] Add `hawk.failureThreshold` to your `stackhawk.yml` file
+
+```YAML
+app:
+  applicationId: xxxxx-XXXXXX-xxxx-XXXX-XXXxxxxXXX
+  env: Development
+  host: http://localhost:3000
+```
+- Add `codeScanningAlerts` and `githubToken` to the Run Stackhawk step in your Github Workflows `main.yml`
+
+```YAML
+....
+- name: Run StackHawk
+        uses: stackhawk/hawkscan-action@v1.3.0
+        with:
+          apiKey: ${{ secrets.HAWK_API_KEY }}
+          codeScanningAlerts: true
+          githubToken: ${{ github.token }}
+          dryRun: false
+```
