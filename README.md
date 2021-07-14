@@ -7,6 +7,7 @@ This README.md is intended to act as a hands-on guide for implementing StackHawk
 - [ ] Build and Run the app with the Docker Compose command listed in the Vuln_Node_Express READ.me
 
 ## Step Two: Local Scan
+- [ ] Create an and save an API key via the StackHawk Web Platform
 - [ ] Create an application in the StackHawk Web Platform and copy the `applicationId`
 - [ ] Create a `stackhawk.yml` file at the root of your recently cloned project directory
 - [ ] Add the following basic configuration to your `stackhawk.yml` file supplying your `applicationId`
@@ -19,7 +20,7 @@ app:
 ```
 - [ ] Run the following Docker command
 ```bash 
-docker run --name hawkscan --network host -e API_KEY=${API_KEY} --rm -v $(pwd):/hawk:rw -it stackhawk/hawkscan:latest
+docker run --name hawkscan --network host -e API_KEY=hawk.xxxxXXXXxxxxXXXXXxxxx --rm -v $(pwd):/hawk:rw -it stackhawk/hawkscan:latest
 ```
 
 
