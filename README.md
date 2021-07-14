@@ -79,7 +79,6 @@ app:
 - [ ] Add `codeScanningAlerts` and `githubToken` to the Run Stackhawk step in your Github Workflows `main.yml`
 
 ```YAML
-....
 - name: Run StackHawk
         uses: stackhawk/hawkscan-action@v1.3.0
         with:
