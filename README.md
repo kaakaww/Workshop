@@ -24,6 +24,8 @@ app:
 
 ```bash
 export HAWK_API_KEY=hawk.xxxxXXXXxxxxXXXXxxxx
+```
+```bash
 docker run --name hawkscan --network host -e HAWK_API_KEY --rm -v $(pwd):/hawk:rw -t stackhawk/hawkscan:latest
 ```
 
