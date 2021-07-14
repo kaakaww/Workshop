@@ -76,7 +76,7 @@ app:
   env: Development
   host: http://localhost:3000
 ```
-- Add `codeScanningAlerts` and `githubToken` to the Run Stackhawk step in your Github Workflows `main.yml`
+- [ ] Add `codeScanningAlerts` and `githubToken` to the Run Stackhawk step in your Github Workflows `main.yml`
 
 ```YAML
 ....
