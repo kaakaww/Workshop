@@ -78,6 +78,8 @@ app:
   applicationId: xxxxx-XXXXXX-xxxx-XXXX-XXXxxxxXXX
   env: Development
   host: http://localhost:3000
+hawk:
+  failureThreshold: high
 ```
 - [ ] Add `codeScanningAlerts` and `githubToken` to the Run Stackhawk step in your Github Workflows `main.yml`
 
